@@ -29,11 +29,11 @@ body::after {
 }
 
 .clearfix {
-  clear:both;
+  clear: both;
 }
 
 .textarea {
-  display: block;
+  /*display: block;*/
   width: 700px;
   height: 300px;
   margin: 10px auto 10px;
@@ -45,10 +45,12 @@ body::after {
   width: 700px;
   margin: 0 auto;
   padding: 0 5px 5px 5px;
-  background: #00c3ff;
+  /*background: #00c3ff;
   border: 3px solid #222222;
-  border-radius: 5px;
+  border-radius: 5px;*/
 }
+
+
 
 /*-------------------------------*/
 /*body {
