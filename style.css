@@ -37,6 +37,38 @@ body::after {
     background-color: rgb(243, 255, 188);
     color: rgb(49, 5, 59);
     font-size: 22px;
+    transition: transform 0.15s;
+  transform-style: preserve-3d;
+}
+
+v-key::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+
+.v-key:hover {
+  background: #ffe9e9;
+  -webkit-transform: translate(0, 0.25em);
+  -ms-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+}
+
+.v-key:hover::before {
+  -webkit-box-shadow:0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  box-shadow:  0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+.v-key:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.v-key:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
 }
 
 .clearfix {
@@ -59,8 +91,8 @@ body::after {
  }
 
 .active {
-  background-color: rgb(162, 0, 255);
-  color: #fff;
+  /*background-color: rgb(162, 0, 255);
+  color: #fff;*/
 }
 
 
