@@ -14,18 +14,6 @@ background-color: rgb(235, 218, 255);
 padding: 5px;
 }
 
-.body:hover {
-  background-color: rgb(255, 146, 21);
-  transform: scale(1.01);
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.3), 0 0px 5px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
-}
-
-body::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .v-key {
     width: 50px;
     height: 50px;
@@ -41,7 +29,7 @@ body::after {
   transform-style: preserve-3d;
 }
 
-v-key::before {
+.v-key::before {
     box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
   transform: translate3d(0, 0.75em, -1em);
   transition: transform 0.15s, box-shadow 0.15s;
@@ -76,8 +64,7 @@ v-key::before {
 }
 
 .textarea {
-  /*display: block;*/
-  width: 700px;
+   width: 700px;
   height: 300px;
   margin: 10px auto 10px;
   padding: 10px;
@@ -90,103 +77,12 @@ v-key::before {
   padding: 0 5px 5px 5px;
  }
 
-.active {
-  /*background-color: rgb(162, 0, 255);
-  color: #fff;*/
-}
+ .title {
+  font-size: 22px;
+  color: rgb(49, 5, 59);
+ }
 
-
-
-/*-------------------------------*/
-/*body {
-    margin: 0;
-    height: 100vh;
-    /*background: radial-gradient(circle at top, skyblue, steelblue);*/
-    /*overflow: hidden;
-  }
-  
-  textarea {
-    display: block;
-    margin: 1em auto;
-    padding: 0.4em;
-    width: 90%;
-    height: 30%;
-    resize: none;
-    font-size: 1.2em;
-    font-family: system-ui, monospace;
-    border-radius: 5px;
-  }
-  
-  .keyboard {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 5px 0;
-    background: #be4d02;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    user-select: none;
-    transition: bottom 0.4s;
-  }
-  
-  /*.keyboard-hidden {
-    bottom: -100%;
-  }*/
-  
-  /*.keyboard-keys {
-    text-align: center;
-  }
-  
-  .keyboard-key {
-    height: 45px;
-    width: 6%;
-    max-width: 90px;
-    margin: 3px;
-    border-radius: 4px;
-    border: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    font-size: 1.05rem;
-    outline: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: top;
-    padding: 0;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-  }
-  
-  .keyboard-key:active {
-    background: rgba(255, 255, 255, 0.12);
-  }
-  
-  .keyboard-wide {
-    width: 12%;
-  }
-  
-  .keyboard-extrawide {
-    width: 36%;
-    max-width: 500px;
-  }
-  
-  .keyboard-active::after {
-    content: "";
-    top: 10px;
-    right: 10px;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-  }
-  
-  .keyboard-check::after {
-    background: #08ff00;
-  }
-  
-  .keyboard-dark {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  */
+ .description {
+  font-size: 20px;
+  color: rgb(49, 5, 59);
+ }

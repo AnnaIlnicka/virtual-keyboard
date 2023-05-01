@@ -10,7 +10,7 @@ function init(){
         if (i==14 || i==29 || i==42 || i==56){
             out +='<div class="clearfix"></div>';
         }
-       out +='<div class="v-key" id="v-key" data="'+ body[i] +'" >'+ String.fromCharCode (body[i]) + '</div>';
+       out +='<div class="v-key" id="" data="'+ body[i] +'" >'+ String.fromCharCode (body[i]) + '</div>';
     }
    document.querySelector('body').innerHTML = out;
 }
@@ -24,7 +24,7 @@ console.log(event.key);
 document.querySelectorAll('body .v-key').forEach(function(element){
     element.classList.remove('active');
 });
-document.querySelector('body .v-key[data="' + event.key + '"]') .classList.add ('active');
+document.querySelector('body .v-key[data="'+event.key+'"]').classList.add('active');
 }
 
 document.querySelectorAll('body .v-key').forEach(function(element){
@@ -57,10 +57,6 @@ function getBody() {
     description.className = 'description';
     description.innerHTML = 'Клавиатура создана для операционной системы Windows';
     container.append(description);
-    const language = document.createElement('p');
-    language.className = 'language';
-    language.innerHTML = 'Для переключения языка используйте комбинацию: зажать Ctrl + Alt';
-    container.append(language);
-  }
+    }
   
   getBody();
